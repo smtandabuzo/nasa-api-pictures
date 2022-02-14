@@ -17,12 +17,13 @@ function showContent(page){
         top: 0,
         behavior: 'instant'
     });
+    console.log(page);
     if(page === 'results'){
-        resultsNav.classList.remove('hidden');
-        favoritesNav.classList.add('hidden');
-    } else {
         resultsNav.classList.add('hidden');
         favoritesNav.classList.remove('hidden');
+    } else {
+        resultsNav.classList.remove('hidden');
+        favoritesNav.classList.add('hidden');
     }
     loader.classList.add('hidden');
 }
